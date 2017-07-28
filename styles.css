@@ -1,0 +1,178 @@
+body{
+    background-color: #FCFFFD;
+    padding: 0;
+    margin: 0;
+}
+.todo_panel {
+    width: 800px;
+    height: 100%;
+    margin: auto;
+}
+.list_block {
+    background-color: #C0FDFB;
+    width: 30%; 
+    height: fit-content;
+    min-height: 100%; 
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: auto;  
+    overflow-x: hidden;  
+}
+
+.list_points_block {
+    background-color: #DAFFEF;
+    width: 70%; 
+    box-sizing: border-box;
+    height: 100%;
+    float: right;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;  
+}
+
+.new_list {
+    width: 100%; 
+    height: 22pt; 
+    margin: 5 5 15 5;
+}
+.new_list_text {
+    background-color: inherit;
+    height: 100%; 
+    width: 100%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11pt;
+    border: 0;
+    display: block;
+    float: left;
+}
+
+.plus_button {
+    width: 20px;
+    height: inherit; 
+    background-color: inherit; 
+    border: none;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: 100;
+    float: right;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    padding: 0 12 0 0;
+}
+
+.lst_it{
+    height: 40px;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.lst_pt{
+    height: 40px;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.ch_box_txt{
+    width: 100%;
+    background: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.ch_box{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+    
+}
+
+.list_points{
+    margin: 50;
+}
+
+.lst_it_sel{
+    background: lightblue;
+}
+
+.lst_it_unsel{
+    background: inherit;
+}
+
+.text_of_lst_it{
+    width: 100%;
+    background: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    color: gray;
+    padding: 0 0 0 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.cross_btn_lst_it{
+    width: 20pt;
+    background: inherit;
+    height: inherit; 
+    border: none;
+    color: gray;
+    text-align: center;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.cross_btn_lst_it_lst{
+    font-size: 14pt;
+    float: right;
+    margin: 0 5 0 0;
+}
+
+.cross_btn_lst_it_pnt{
+    font-size: 9pt;
+    padding-top: 3;
+}
+
+input[type=checkbox]:checked + label.ch_box_txt{
+    text-decoration: line-through;
+    color:gray;
+}
+
+textarea:focus, input:focus, input{
+    outline: 0;
+}
+.main_lists {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wait {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('graphics/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .wait {
+    display: block;
+}
