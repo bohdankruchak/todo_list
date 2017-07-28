@@ -3,10 +3,22 @@ body{
     padding: 0;
     margin: 0;
 }
+header{
+    background-color: #1a4f4e;
+    width: 800px;
+    margin: auto;
+    font-size: 20;
+    color: #C0FDFB;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    display: fixed;
+    padding-top: 5px;
+    height: 5%;
+}
 .todo_panel {
     width: 800px;
-    height: 100%;
+    height: 93%;
     margin: auto;
+    padding-top: 3px;
 }
 .list_block {
     background-color: #C0FDFB;
@@ -152,7 +164,7 @@ body{
     padding-top: 3;
 }
 
-input[type=checkbox]:checked + label.ch_box_txt{
+input[type=checkbox]:checked + input.ch_box_txt{
     text-decoration: line-through;
     color:gray;
 }
