@@ -11,7 +11,7 @@ body{
 .list_block {
     background-color: #C0FDFB;
     width: 30%; 
-    height: fit-content;
+    height: 100%; 
     min-height: 100%; 
     float: left;
     display: block;

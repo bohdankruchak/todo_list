@@ -1,7 +1,7 @@
 <ul class="main_lists">
     <?php
-        require_once('\models\list_point.php');
-        require_once('\views\controls\listpoint.php');
+        require_once('models/list_point.php');
+        require_once('views/controls/listpoint.php');
 
         $lists = [];
         $lists = cListPoint::all($sel_id , 0);

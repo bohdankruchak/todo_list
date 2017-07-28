@@ -1,5 +1,5 @@
 <?php
-require_once('\models\list_point.php'); 
+require_once('models/list_point.php'); 
   class cList {
     public $id;
     public $title;
