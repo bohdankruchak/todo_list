@@ -1,8 +1,8 @@
 <?php
     require_once('models/list.php');
-    require_once('models\list_point.php');
-    require_once('\views\controls\listitem.php');
-    require_once('\views\controls\listpoint.php');
+    require_once('models/list_point.php');
+    require_once('views/controls/listitem.php');
+    require_once('views/controls/listpoint.php');
     $sel_id = 1;
 ?>
 <div class="todo_panel">

@@ -79,7 +79,7 @@ body{
     border-bottom: 1px solid lightgrey;
 }
 
-.ch_box_txt{
+/* .ch_box_txt{
     width: 100%;
     background: inherit;
     display: table-cell;
@@ -87,13 +87,24 @@ body{
     padding: 0 5px 0 5px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
-}
+} */
 .ch_box{
     display: table-cell;
     vertical-align: middle;
     padding: 0 5px 0 5px;
-    
 }
+
+.ch_box_txt{
+    background-color: inherit;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11pt;
+    border: 0;
+    width: 88%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+}
+
 
 .list_points{
     margin: 50;

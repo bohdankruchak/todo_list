@@ -47,6 +47,12 @@
                 $sel_id  = $_POST['selected_id'];
                 require_once('/views/pages_parts/todo_list_points.php');
             break;
+            case "edit_point":
+                $temp_content = $_POST['content'];
+                $temp_id = $_POST['id'];
+                $db->query("UPDATE `list_points` SET `content` = '$temp_content' WHERE `list_points`.`id` = $temp_id");
+                echo "";
+            break;
         }
 	    exit;
     }
